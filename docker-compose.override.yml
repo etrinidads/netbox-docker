@@ -2,3 +2,6 @@ services:
   netbox:
     ports:
     - 8080:8080
+    healthcheck:
+      retries: 15
+      start_period: 90s
